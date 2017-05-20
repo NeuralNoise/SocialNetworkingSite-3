@@ -1,0 +1,29 @@
+.bg-img-full{
+	background: url('/images/friends.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.border2px{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+}
+
+.padding-top100{
+	padding-top: 100px;
+}
+
+.bg-login {
+    background-color:rgba( 192, 192, 192, 0.5);
+}
+h1{
+	font-family: Monotype Corsiva;
+	color: #effcfc;
+	font-size: 100px;
+	text-align: center;
+	padding-top: 200px;
+}
