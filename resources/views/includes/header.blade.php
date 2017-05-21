@@ -14,6 +14,7 @@
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	
 			    <ul class="nav navbar-nav navbar-right">
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="modal" data-target="#login" role="button" aria-haspopup="true" aria-expanded="true">
@@ -24,7 +25,7 @@
 					        <!-- Modal content-->
 					        <div class="modal-content">
 					            <div class="col-lg-12 border2px bg-login" style="padding-top: 30px;">
-					                <form action="#" method="post">
+					                <form action="{{ route('signin') }}" method="post">
 					                    <div class="form-group">
 					                        <label for="email">E-mail</label>
 					                        <input class="form-control" type="text" name="email" id="email" required>
@@ -34,6 +35,7 @@
 					                        <input class="form-control" type="password" name="password" id="password" required>
 					                    </div>
 					                    <button type="submit" class="btn btn-primary">Login</button>
+					        			{{ csrf_field() }}
 					                    <h6>Don't have an account? <a href="{{ url('register') }}" style="color : #005ce6">Sign up now!</a></h6>
 					                </form>
 					            </div>
